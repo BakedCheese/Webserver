@@ -6,10 +6,6 @@ const con = mysql.createConnection({
   password: "7t1wsx3tNIPLPHIy",
   port: "25060",
   database: "defaultdb",
-  ssl: true,
-  dialectOptions: {
-    ssl: { require: true },
-  },
 });
 
 con.connect(function (err) {
