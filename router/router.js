@@ -55,7 +55,7 @@ router.get("/pictures/:id", getPictureWithId);
 
 router.delete("/pictures/:id", deletePicture);
 
-router.get("/isloggedin", isLoggedin);
+
 router.post("/login", checklogin);
 
 export default router;
