@@ -26,7 +26,7 @@ import {
   deletePicture,
 } from "../controllers/picture.js";
 
-import { checklogin, isLoggedin } from "../Login/login.js";
+import { checklogin } from "../Login/login.js";
 const router = express.Router();
 
 router.get("/collections", getCollections);
@@ -54,7 +54,6 @@ router.get("/pictures", getPictures);
 router.get("/pictures/:id", getPictureWithId);
 
 router.delete("/pictures/:id", deletePicture);
-
 
 router.post("/login", checklogin);
 
