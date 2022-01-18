@@ -1,13 +1,16 @@
 import dbConnection from "../connection.js";
 
 export const getPictures = (req, res) => {
-  dbConnection.query("SELECT * FROM picture", (err, results) => {
-    if (!err) {
-      res.json(results);
-    } else {
-      res.send(err);
+  dbConnection.query(
+    "SELECT * FROM picture ORDER BY made DESC",
+    (err, results) => {
+      if (!err) {
+        res.json(results);
+      } else {
+        res.send(err);
+      }
     }
-  });
+  );
 };
 
 export const getPictureWithId = (req, res) => {
