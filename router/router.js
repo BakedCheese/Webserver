@@ -23,7 +23,9 @@ import {
 import {
   getPictures,
   getPictureWithId,
+  createPicture,
   deletePicture,
+  updatePicture,
 } from "../controllers/picture.js";
 
 import { checklogin } from "../Login/login.js";
@@ -53,7 +55,9 @@ router.put("/paragraphs/:id", updateParagraph);
 router.get("/pictures", getPictures);
 router.get("/pictures/:id", getPictureWithId);
 
+router.post("/pictures", createPicture);
 router.delete("/pictures/:id", deletePicture);
+router.put("/pictures/:id", updatePicture);
 
 router.post("/login", checklogin);
 
