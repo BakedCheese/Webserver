@@ -1,13 +1,16 @@
 import dbConnection from "../connection.js";
 
 export const getParagraphs = (req, res) => {
-  dbConnection.query("SELECT * FROM paragraph", (err, results) => {
-    if (!err) {
-      res.json(results);
-    } else {
-      res.send(err);
+  dbConnection.query(
+    "SELECT * FROM paragraph ORDER BY order_in_project DESC",
+    (err, results) => {
+      if (!err) {
+        res.json(results);
+      } else {
+        res.send(err);
+      }
     }
-  });
+  );
 };
 
 export const getParagraphWithId = (req, res) => {
