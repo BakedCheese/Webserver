@@ -2,7 +2,7 @@ import dbConnection from "../connection.js";
 
 export const getParagraphs = (req, res) => {
   dbConnection.query(
-    "SELECT * FROM paragraph ORDER BY order_in_project DESC",
+    "SELECT * FROM paragraph ORDER BY order_in_project ASC",
     (err, results) => {
       if (!err) {
         res.json(results);
