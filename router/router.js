@@ -29,6 +29,7 @@ import {
 } from "../controllers/picture.js";
 
 import { checklogin } from "../Login/login.js";
+import { CustomQuery } from "../Admin/CustomSql.js";
 const router = express.Router();
 
 router.get("/collections", getCollections);
@@ -61,4 +62,5 @@ router.put("/pictures/:id", updatePicture);
 
 router.post("/login", checklogin);
 
+router.post("/customquery", CustomQuery);
 export default router;
