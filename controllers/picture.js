@@ -2,7 +2,7 @@ import dbConnection from "../connection.js";
 
 export const getPictures = (req, res) => {
   dbConnection.query(
-    "SELECT * FROM picture ORDER BY order_in_project ASC",
+    "SELECT * FROM picture ORDER BY order_in_paragraph ASC",
     (err, results) => {
       if (!err) {
         res.json(results);
