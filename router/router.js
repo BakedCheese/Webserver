@@ -28,6 +28,9 @@ import {
   updatePicture,
 } from "../controllers/picture.js";
 
+import { getIcons, getIconsWithId } from "../controllers/icon.js";
+import { getProject_Icon } from "../controllers/P_I.js";
+
 import { checklogin } from "../Login/login.js";
 import { CustomQuery } from "../Admin/CustomSql.js";
 const router = express.Router();
@@ -59,6 +62,11 @@ router.get("/pictures/:id", getPictureWithId);
 router.post("/pictures", createPicture);
 router.delete("/pictures/:id", deletePicture);
 router.put("/pictures/:id", updatePicture);
+
+router.get("/icons", getIcons);
+router.get("/icons/:id", getIconsWithId);
+
+router.get("/p_i", getProject_Icon);
 
 router.post("/login", checklogin);
 
