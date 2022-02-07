@@ -28,7 +28,7 @@ import {
   updatePicture,
 } from "../controllers/picture.js";
 
-import { getIcons, getIconsWithId } from "../controllers/icon.js";
+import { getIcons, getIconsWithId } from "../controllers/icons.js";
 import { getProject_Icon } from "../controllers/PI.js";
 
 import { checklogin } from "../Login/login.js";
