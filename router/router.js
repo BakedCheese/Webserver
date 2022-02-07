@@ -29,7 +29,13 @@ import {
 } from "../controllers/picture.js";
 
 import { getIcons, getIconsWithId } from "../controllers/icons.js";
-import { getProject_Icon } from "../controllers/PI.js";
+import {
+  getProject_Icon,
+  getProject_IconWithId,
+  createProject_Icon,
+  deleteProject_Icon,
+  updateProject_Icon,
+} from "../controllers/PI.js";
 
 import { checklogin } from "../Login/login.js";
 import { CustomQuery } from "../Admin/CustomSql.js";
@@ -67,6 +73,11 @@ router.get("/icons", getIcons);
 router.get("/icons/:id", getIconsWithId);
 
 router.get("/p_i", getProject_Icon);
+router.get("/p_i/:id", getProject_IconWithId);
+
+router.post("/p_i", createProject_Icon);
+router.delete("/p_i/:id", deleteProject_Icon);
+router.put("/p_i/:id", updateProject_Icon);
 
 router.post("/login", checklogin);
 
