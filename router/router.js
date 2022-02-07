@@ -29,7 +29,7 @@ import {
 } from "../controllers/picture.js";
 
 import { getIcons, getIconsWithId } from "../controllers/icon.js";
-import { getProject_Icon } from "../controllers/P_I.js";
+import { getProject_Icon } from "../controllers/PI.js";
 
 import { checklogin } from "../Login/login.js";
 import { CustomQuery } from "../Admin/CustomSql.js";
