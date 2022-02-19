@@ -1,6 +1,7 @@
 import express from "express";
 import {
   getCollections,
+  getCollectionsUpdated,
   getCollectionWithId,
   createCollection,
   deleteCollection,
@@ -42,6 +43,7 @@ import { CustomQuery } from "../Admin/CustomSql.js";
 const router = express.Router();
 
 router.get("/collections", getCollections);
+router.get("/collectionsU", getCollectionsUpdated);
 router.get("/collections/:id", getCollectionWithId);
 
 router.post("/collections", createCollection);

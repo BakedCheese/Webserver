@@ -13,6 +13,19 @@ export const getCollections = (req, res) => {
   );
 };
 
+export const getCollectionsUpdated = (req, res) => {
+  dbConnection.query(
+    "SELECT * FROM collection ORDER BY updated DESC",
+    (err, results) => {
+      if (!err) {
+        res.json(results);
+      } else {
+        res.send(err);
+      }
+    }
+  );
+};
+
 export const getCollectionWithId = (req, res) => {
   dbConnection.query(
     `SELECT * FROM collection WHERE id = ${req.params.id}`,
