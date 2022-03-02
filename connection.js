@@ -20,6 +20,7 @@ con.connect(function (err) {
   
 });
 
+con.end();
 
 
 
