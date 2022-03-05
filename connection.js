@@ -19,6 +19,7 @@ Checkconnection();
 
 
 cron.schedule('* */2 * * *', () => {
+  console.log();
   console.log('Reconnecting module actived -->');
   con.end();
   console.log('Connection ended -->');
