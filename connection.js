@@ -18,7 +18,7 @@ Checkconnection();
 
 
 
-cron.schedule('* 1 * * *', () => {
+cron.schedule('* 0,5,10,15,20 * * *', () => {
   console.log();
   console.log('Reconnecting module actived -->');
   con.end();
