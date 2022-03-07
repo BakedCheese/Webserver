@@ -11,7 +11,6 @@ export const getProjects = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const getProjectWithId = (req, res) => {
@@ -26,7 +25,6 @@ export const getProjectWithId = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const createProject = (req, res) => {
@@ -43,7 +41,6 @@ export const createProject = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const deleteProject = (req, res) => {
@@ -59,7 +56,6 @@ export const deleteProject = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const updateProject = (req, res) => {
@@ -75,5 +71,4 @@ export const updateProject = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };

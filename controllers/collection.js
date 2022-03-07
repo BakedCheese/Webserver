@@ -11,7 +11,6 @@ export const getCollections = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const getCollectionsUpdated = (req, res) => {
@@ -25,7 +24,6 @@ export const getCollectionsUpdated = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const getCollectionWithId = (req, res) => {
@@ -40,7 +38,6 @@ export const getCollectionWithId = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const createCollection = (req, res) => {
@@ -57,7 +54,6 @@ export const createCollection = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const deleteCollection = (req, res) => {
@@ -73,7 +69,6 @@ export const deleteCollection = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
 
 export const updateCollection = (req, res) => {
@@ -89,5 +84,4 @@ export const updateCollection = (req, res) => {
       }
     }
   );
-  dbConnection.end();
 };
