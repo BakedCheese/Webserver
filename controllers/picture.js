@@ -11,6 +11,7 @@ export const getPictures = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const getPictureWithId = (req, res) => {
@@ -25,6 +26,7 @@ export const getPictureWithId = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const createPicture = (req, res) => {
@@ -41,6 +43,7 @@ export const createPicture = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const deletePicture = (req, res) => {
@@ -56,6 +59,7 @@ export const deletePicture = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const updatePicture = (req, res) => {
@@ -71,4 +75,5 @@ export const updatePicture = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };

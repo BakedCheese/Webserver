@@ -8,6 +8,7 @@ export const getProject_Icon = (req, res) => {
       res.send(err);
     }
   });
+  dbConnection.end();
 };
 
 export const getProject_IconWithId = (req, res) => {
@@ -22,6 +23,7 @@ export const getProject_IconWithId = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const createProject_Icon = (req, res) => {
@@ -32,6 +34,7 @@ export const createProject_Icon = (req, res) => {
       res.send(err);
     }
   });
+  dbConnection.end();
 };
 
 export const deleteProject_Icon = (req, res) => {
@@ -47,6 +50,7 @@ export const deleteProject_Icon = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const updateProject_Icon = (req, res) => {
@@ -62,4 +66,5 @@ export const updateProject_Icon = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };

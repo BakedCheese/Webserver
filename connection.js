@@ -1,6 +1,6 @@
 import mysql from "mysql2";
 import fs from "fs";
-import cron from "node-cron";
+
 
 
 let con = mysql.createConnection({
@@ -20,11 +20,6 @@ con.connect(function (err) {
   if (err) throw err;
   console.log("Connected! on: "  + now);
 });
-
-
-
-
-
 
 
 export default con;

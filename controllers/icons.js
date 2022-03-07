@@ -8,6 +8,7 @@ export const getIcons = (req, res) => {
       res.send(err);
     }
   });
+  dbConnection.end();
 };
 
 export const getIconsWithId = (req, res) => {
@@ -22,4 +23,5 @@ export const getIconsWithId = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };

@@ -11,6 +11,7 @@ export const getParagraphs = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const getParagraphWithId = (req, res) => {
@@ -25,6 +26,7 @@ export const getParagraphWithId = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const createParagraph = (req, res) => {
@@ -41,6 +43,7 @@ export const createParagraph = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const deleteParagraph = (req, res) => {
@@ -56,6 +59,7 @@ export const deleteParagraph = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
 
 export const updateParagraph = (req, res) => {
@@ -71,4 +75,5 @@ export const updateParagraph = (req, res) => {
       }
     }
   );
+  dbConnection.end();
 };
