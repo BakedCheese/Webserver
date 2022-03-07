@@ -5,8 +5,6 @@ import cors from "cors";
 // import routes
 import router from "./router/router.js";
 
-import cron from "node-cron"
-
 // init express
 const app = express();
 
@@ -20,5 +18,3 @@ app.use(cors());
 app.use(router);
 
 app.listen(5000, () => console.log("Server running at http://localhost:5000"));
-
-
