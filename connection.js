@@ -2,7 +2,7 @@ import mysql from "mysql2";
 import fs from "fs";
 import cron from "node-cron";
 
-const con = mysql.createPool({
+const con = mysql.createConnection({
   host: "portfolio-do-user-8793639-0.b.db.ondigitalocean.com",
   user: "doadmin",
   password: "7t1wsx3tNIPLPHIy",
@@ -14,7 +14,6 @@ const con = mysql.createPool({
 });
 
 const now = new Date();
-
 con.connect(function (err) {
   if (err) {
     console.log("ERROR:");
